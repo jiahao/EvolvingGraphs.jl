@@ -89,6 +89,8 @@ include("algorithms/temporal_efficiency.jl")
     @require Colors include(joinpath(dirname(@__FILE__),"plot","draw.jl"))
 end
 
+@require DistributedArrays include(joinpath(dirname(@__FILE__), "graphs","distributed_evolving_graph.jl"))
+
 # examples
 include("examples.jl")
 
